@@ -13,7 +13,7 @@ body {
   border-radius: 15px;
   text-align: center;
   margin: auto;
-  width: 50%;
+  width: 75%;
 }
 
 h1{
@@ -49,4 +49,5 @@ li::marker{
     font-weight: bold;
     font-size: 1.25em;
     color: #b5d9ff;
+
 }

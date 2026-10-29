@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0f1d">
+    <meta name="description" content="Studijní materiály k maturitním předmětům: výklad, příklady a dokumentace softwaru v Markdownu.">
+    <title>Maturitní plán — studijní materiály</title>
+    <link rel="stylesheet" href="assets/css/styles.css?v=12">
+    <script type="module" src="assets/js/app.js?v=14"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <button class="icon-button menu-button" id="menu-btn" type="button" aria-label="Otevřít navigaci" aria-expanded="false">
+        <span aria-hidden="true">&gt;</span>
+      </button>
+      <a class="brand" href="#/" aria-label="Maturitní plán – přehled">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-name">Maturitní<span> plán</span></span>
+      </a>
+      <label class="search">
+        <span class="sr-only">Hledat v materiálech</span>
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Hledat předmět nebo kapitolu…" autocomplete="off" aria-controls="search-results">
+        <kbd>/</kbd>
+        <div id="search-results" class="search-results" role="listbox" aria-label="Výsledky hledání"></div>
+      </label>
+      <button class="icon-button theme-button" id="theme-btn" type="button" aria-label="Přepnout barevný režim" title="Přepnout barevný režim">
+        <span id="theme-icon" aria-hidden="true">☾</span>
+      </button>
+    </header>
+
+    <button class="sidebar-toggle" id="sidebar-toggle" type="button" aria-label="Otevřít navigaci" aria-controls="sidebar" aria-expanded="false" title="Otevřít nebo skrýt navigaci">
+      <span aria-hidden="true">☰</span>
+    </button>
+    <div class="mobile-scrim" id="mobile-scrim"></div>
+    <div class="layout">
+      <nav class="sidebar" id="sidebar" aria-label="Navigace předměty"></nav>
+      <main class="content" id="app" tabindex="-1"></main>
+    </div>
+
+    <footer class="footer">
+      <span class="footer-mark" aria-hidden="true">M</span>
+      <span>Maturitní plán</span>
+      <span class="footer-note">Výklad · příklady · souvislosti</span>
+      <span class="footer-save"><i></i> Studuj na mobilu i počítači</span>
+    </footer>
+  </body>
+</html>
